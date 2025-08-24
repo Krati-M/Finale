@@ -1,0 +1,27 @@
+nav{
+    background-color:midnightblue;
+    height:50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+    font-size: 20px;
+    padding: 25px;
+}
+
+nav a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+a:hover{
+    background-color: crimson;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+
