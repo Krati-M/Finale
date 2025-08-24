@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jokes</title>  
+    <link rel="stylesheet" href="joke-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href = "nav.css">
+</head>
+<style>
+  body{
+    background-color:cornflowerblue;
+    text-align: center;
+}
+h1{
+    color:honeydew;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    border-radius: 5px;
+    border-color:black;
+    background-color: lightcoral;
+}
+div{
+    border-width: 5px;
+    border-style: dotted;
+    border-color:darkseagreen;
+    width: 50%;
+    margin: auto;
+    box-shadow: 8px 10px lightgoldenrodyellow;
+    font-style: italic;
+}
+</style>
+<body>
+    <nav>
+        <a href="index.html">Magic-8 Ball</a>
+        <a href="poem.html">Poem</a>
+        <a href="joke.html">Jokes</a>
+        <a href="recipe.html">Recipes</a>
+        <a href="travel.html">Toronto Guide</a>
+        <a href="Invite.html">RSVP Evite</a>
+        <a href="math.html">Quadratics Calculator</a>
+    </nav>
+    <h1>Random Code Generator</h1>
+    <div id="container">
+        <h4></h4>
+    </div>
+    <br>
+    <button onclick="Joker()">Generate Joke</button>
+    <script>
+        var jokes_array = ["Wanna hear a joke about paper? Never mind—it's tearable",
+            "I burned 2000 calories today, I left my food in the oven for too long.",
+            "I wondered why the frisbee kept on getting bigger. Then it hit me.",
+            "I was going to tell you a fighting joke...but I forgot the punch line.",
+            "Did you hear about the famous Italian chef that recently died? He pasta way.",
+            "Rest in peace, boiled water. You will be mist."]
+
+        function Joker() {
+            var ran = Math.random() * 5;
+            var RandomInt = Math.floor(ran);
+            var RandomJoke = jokes_array[RandomInt];
+            document.getElementById("container").innerHTML = RandomJoke;
+        }
+    </script>
+</body>
+
+</html>
